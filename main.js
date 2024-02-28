@@ -11,7 +11,6 @@ title.style.fontSize = '20px'
 const container = document.querySelector('#container');
 container.style.display = 'flex';
 container.style.flexWrap = 'wrap';
-container.style.margin = 'auto';
 container.style.width = ' 960px';
 //End of container styles
 
@@ -45,13 +44,9 @@ gridSize.addEventListener('click', function(){
     })
 
 const darkSketchs = document.querySelector('#darkSketch');
-darkSketchs.addEventListener('click', function(){
-    darkSketch();
-})
+darkSketchs.addEventListener('click', darkSketch);
 const lightSketchs = document.querySelector('#lightSketch');
-lightSketchs.addEventListener('click', function(){
-    lightSketch();
-})
+lightSketchs.addEventListener('click', lightSketch);
 const reset = document.querySelector('#reset');
 reset.addEventListener('click', function(){
     const squares = document.getElementsByClassName('square');

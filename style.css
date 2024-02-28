@@ -8,3 +8,9 @@ body{
     width: 20px;
     height: 20px;
 }
+#container{
+    display: flex;
+    width: 700px;
+    margin: 50px auto;
+    background-color: aliceblue;
+}
