@@ -22,7 +22,6 @@ function gridResize(){
     grid.classList.add('square');
     container.appendChild(grid);
 }}
-
 function darkSketch(){
     const squares = document.getElementsByClassName('square');
     // Iterate over the collection and attach event listeners to each element
@@ -30,15 +29,11 @@ function darkSketch(){
     squares[i].addEventListener('mouseover', function() {
             this.style.backgroundColor = 'grey';
         });
-     }
-}
-
+    }}
 function lightSketch(){
     const squares = document.getElementsByClassName('square');
-    // Iterate over the collection and attach event listeners to each element
     for (let i = 0; i < squares.length ; i++) {
     squares[i].addEventListener('mouseover', function() {
             this.style.backgroundColor = 'lightGrey';
         });
-     }
-}
+    }}
