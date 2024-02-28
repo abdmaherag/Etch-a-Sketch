@@ -1,0 +1,10 @@
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+.square{
+    border: 1px solid lightblue;
+    width: 20px;
+    height: 20px;
+}
