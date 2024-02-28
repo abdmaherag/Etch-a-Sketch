@@ -52,3 +52,10 @@ const lightSketchs = document.querySelector('#lightSketch');
 lightSketchs.addEventListener('click', function(){
     lightSketch();
 })
+const reset = document.querySelector('#reset');
+reset.addEventListener('click', function(){
+    const squares = document.getElementsByClassName('square');
+    for (let i = 0; i < squares.length ; i++) {
+        squares[i].style.backgroundColor = 'white'
+    }
+})
