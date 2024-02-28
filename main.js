@@ -16,7 +16,7 @@ container.style.width = ' 960px';
 //End of container styles
 
 function gridResize(){
-    customGridSize = prompt('Please enter a grid size between 1 to 100', 16);
+    customGridSize = prompt('Please enter a grid size between 1 to 100', 1);
     for(let i = 0; i < customGridSize*customGridSize; i++){
     const grid = document.createElement('div');
     grid.classList.add('square');
@@ -37,3 +37,18 @@ function lightSketch(){
             this.style.backgroundColor = 'lightGrey';
         });
     }}
+
+const gridSize = document.querySelector('#gridSize');
+gridSize.addEventListener('click', function(){
+    gridResize();
+    darkSketch();
+    })
+
+const darkSketchs = document.querySelector('#darkSketch');
+darkSketchs.addEventListener('click', function(){
+    darkSketch();
+})
+const lightSketchs = document.querySelector('#lightSketch');
+lightSketchs.addEventListener('click', function(){
+    lightSketch();
+})
